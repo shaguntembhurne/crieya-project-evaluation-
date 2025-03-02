@@ -229,7 +229,7 @@ with tab1:
                 pdf_path = save_text_as_pdf(extracted_text, pdf_filename)
 
                 # ✅ Provide user instructions to manually upload
-                st.success("✅ Project Submitted Successfully!")
+                
                 with open(pdf_path, "rb") as pdf_file:
                     st.download_button(label="📄 Download Extracted PDF", data=pdf_file, file_name=f"{pdf_filename}.pdf", mime="application/pdf")
 
