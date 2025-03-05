@@ -48,9 +48,6 @@ def save_text_as_pdf(text, filename):
     c.save()
     return pdf_path
 
-
-
-
 # Predefined prompt for scoring and evaluation
 evaluation_promt = """You are an AI evaluator for CRIEYA – the Centre for Research, Innovation, and Entrepreneurship for Young Aspirants. CRIEYA supports projects that transform innovative ideas into prototypes and ultimately market-ready products. Your task is to evaluate a submitted project (provided as extracted text from a PDF/PPT) according to the following data-driven criteria and CRIEYA’s strategic guidelines.
 
@@ -198,9 +195,6 @@ improvement_prompt = """You are an expert evaluator for CRIEYA’s project impro
 Your final output should be a structured report with clear headings and bullet points for each section, providing the applicant with precise and actionable feedback to improve their project.
 
 """
-
-
-
 
 # ✅ UI Tabs
 tab1, tab2 = st.tabs(["📩 Submit Project", "📊 Evaluate Project"])
